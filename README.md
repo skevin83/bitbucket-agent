@@ -1,5 +1,5 @@
 # Bitbucket Agent Image
-It is based on atlassian/default-image:4 image.
+It is based on atlassian/default-image:5 image.
 
 Then rebuild the image with GoLang and AWSCLI.
 
