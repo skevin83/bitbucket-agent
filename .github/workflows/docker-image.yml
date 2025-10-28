@@ -7,6 +7,20 @@ on:
     branches: ["main"]
   schedule:
     - cron: "0 0 1 * *"
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environment to deploy"
+        required: true
+        default: "staging"
+        type: choice
+        options:
+          - staging
+          - production
+      logLevel:
+        description: "Log level"
+        required: false
+        default: "info"
 
 jobs:
   build:
